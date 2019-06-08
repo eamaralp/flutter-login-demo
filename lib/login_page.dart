@@ -11,16 +11,15 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     final logo = Hero(
-      tag: 'hero',   
+      tag: 'hero',
       child: CircleAvatar(
-        backgroundColor: Colors.black,
-        radius: 75.0,
-        child: CircleAvatar(
-                backgroundColor: Colors.black,
-                radius: 55.0,
-                child: Image.asset('assets/flutter_logo.png'),
-              )
-      ),   
+          backgroundColor: Colors.black,
+          radius: 75.0,
+          child: CircleAvatar(
+            backgroundColor: Colors.black,
+            radius: 55.0,
+            child: Image.asset('assets/flutter_logo.png'),
+          )),
     );
 
     final email = TextFormField(
