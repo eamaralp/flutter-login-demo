@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
                 backgroundColor: Colors.black,
                 radius: 55.0,
                 child: Image.asset('assets/flutter_logo.png'),
-      )
+              )
       ),   
     );
 
@@ -47,9 +47,6 @@ class _LoginPageState extends State<LoginPage> {
     final loginButton = Padding(
       padding: EdgeInsets.symmetric(vertical: 16.0),
       child: RaisedButton(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.horizontal(),
-        ),
         onPressed: () {
           Navigator.of(context).pushNamed(HomePage.tag);
         },
@@ -72,7 +69,7 @@ class _LoginPageState extends State<LoginPage> {
       body: Center(
         child: ListView(
           shrinkWrap: true,
-          padding: EdgeInsets.only(left: 24.0, right: 24.0),
+          padding: EdgeInsets.only(left: 24.0, right: 24.0, top: 24.0),
           children: <Widget>[
             logo,
             SizedBox(height: 48.0),
